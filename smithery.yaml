@@ -1,0 +1,24 @@
+# Smithery MCP Skill Configuration for IFORM Protocol
+# Specification for Smithery.ai registry & Claude Desktop
+
+runtime: "remote"
+
+url: "https://iform.fun/api/ai/mcp"
+
+metadata:
+  name: "iform/web3-forms-mcp"
+  displayName: "IFORM - Web3 Form Protocol"
+  description: "Create, deploy, and manage decentralized Web3 forms and surveys on EVM smart contracts (Robinhood Chain, Arbitrum, Optimism, Ethereum) via Model Context Protocol (MCP)."
+  version: "1.0.0"
+  author: "IFORM Protocol"
+  homepage: "https://iform.fun"
+  repository: "https://github.com/idotmy/iform-mcp-skill"
+  license: "MIT"
+  tags:
+    - "web3"
+    - "forms"
+    - "ethereum"
+    - "arbitrum"
+    - "smart-contracts"
+    - "mcp"
+    - "ai-agents"

@@ -1,0 +1,30 @@
+{
+  "name": "iform/web3-forms-mcp",
+  "displayName": "IFORM Web3 Forms Protocol",
+  "version": "1.0.0",
+  "description": "Create, deploy, and manage decentralized Web3 forms and surveys on EVM chains via Model Context Protocol (MCP)",
+  "runtime": "remote",
+  "endpoint": "https://iform.fun/api/ai/mcp",
+  "protocol": "mcp",
+  "protocolVersion": "2024-11-05",
+  "transport": "sse",
+  "homepage": "https://iform.fun",
+  "tools": [
+    {
+      "name": "generate_form_transaction",
+      "description": "Constructs a ready-to-sign on-chain EVM transaction for the FormFactory smart contract (createForm, closeForm, activateForm, archiveForm, updateSchemaHash) with exact 0.00005 ETH protocol fee."
+    },
+    {
+      "name": "confirm_form",
+      "description": "Registers and indexes an on-chain created form in the IFORM registry with its questions schema, generating the 6-character short slug (e.g. /e3qa69) and live URL."
+    },
+    {
+      "name": "query_forms",
+      "description": "Fetches indexed decentralized forms by chainId, creator/owner address, or status with real-time response counts and metadata."
+    },
+    {
+      "name": "get_form_responses",
+      "description": "Retrieves public or wallet-authenticated submissions and responses recorded for a given form ID or slug."
+    }
+  ]
+}
